@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@font-face {
+    font-family: "Omori";
+    src: url("/assets/font/omori.ttf");
+}
+
+@font-face {
+    font-family: "Omori Creepy";
+    src: url("/assets/font/omori_creepy.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #35097a;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #8c49f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6C0FFF;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #390b83;
+}
+
+::-webkit-scrollbar-button:single-button {
+    background-color: #6C0FFF;
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    height: 16px;
+    width: 16px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(62, 9, 145)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(134, 70, 235)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(163, 123, 227)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    height: 16px;
+    width: 16px;
+    background-position: center 2px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(62, 9, 145)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(134, 70, 235)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(163, 123, 227)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all 1s ease;
+    box-sizing: content-box;
+}
+
+.border-line {
+    padding: 6px 0;
+    border-bottom: 1px solid #414141;
+}
+
+/* 
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video {
+    text-decoration: none;
+    border: 0;
+    font: normal normal normal 100% inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: initial;
+}
+*/
+
+a {
+    color: rgb(0, 81, 255);
+}
+
+a:checked {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #12007a;
+}
+
+a:visited {
+    color: rgb(0, 81, 255);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: "Omori";
+}
+
+
+.inner-width {
+    max-width: 100%
+}
+
+
+
+header.navbar-container {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0px;
+    margin: 0, 0;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    transition: none;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list  {
+    padding: 0px 30px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list ul > li {
+    list-style-type: none;
+    
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1000px;
+}
+
+header.navbar-container .nav-list li a:hover {
+    font-weight: bold;
+    background-color: #414141;
+    color: white;
+}
+
+.bg {
+    top: 0;
+    width:100%;
+    height:100vh;
+    position: fixed;
+    background: url("/assets/img/bg_home.jpeg") no-repeat center;
+    background-attachment: scroll;
+    background-position: center;
+    background-size:cover;
+    z-index: -100;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 25px 25px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.border {
+    border: 2px solid black;
+}
+
+#home {
+    font-size: 25px;
+    font-family: "Omori";
+    min-height: 500px;
+    height: 100dvh;
+}
+
+#home .bg-fade {
+    position: absolute;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.0) 0%,
+        rgba(0, 0, 0, 0.4) 20%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+#home .inner-width {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content { 
+    width: 100%;
+    color: #ffff;
+    z-index: 1
+}
+
+#home .content h1 { 
+    font-size: 5rem;
+}
+#home .content h2 { 
+    font-size: 2rem;
+    opacity: 50%
+}
+
+@keyframes textanim {
+    from {
+        content: "|";
+    }
+    to {
+        content: ""
+    }
+}
+
+#home .content h2 {
+    margin: 0px, 0px;
+    text-decoration: none;
+}
+
+#home .content h2::after {
+    content: "";
+    animation: textanim 2s linear infinite;
+}
+
+article .content {
+    margin: 20px 20px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+article .content p {
+    flex-direction: column;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+article .content .heading {
+    font-family: "Omori";
+    font-size: 2em;
+}
+
+
+#information .container {
+    display: flex;
+    gap: 1.5rem;
+    align-content: flex-start;
+}
+
+#information .aside-content {
+    flex: 1;
+}
+
+#information .main-content {
+    flex: 2;
+}
+
+#information .box .table-info {
+}
+
+#information .sub-content {
+
+}
+
+.table-info {
+    font-family: "Omori";
+}
+
+.table-info .logo {
+    width: 50vwpx;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.table-info .data {
+    display: flex;
+    flex-direction: row;
+    
+}
+.table-info .data .label {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    margin: 1px 1px;
+    width: 100px;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
+}
+.table-info .data .value {
+    font-size: 1em;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+.table-info .data .margin {
+    margin-left: 2px;
+}
+
+#story .container-ending {
+    display: flex;
+    flex-direction: row;
+}
+
+#character .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 15px
+}
+
+#character .charbox {
+    width: 50%;
+    flex: 1
+}
+
+#character .charbox img {
+    overflow: auto;
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#character .charbox figure figcaption {
+    font-size: 1em; text-align: center;
+}
+
+#character .world-char-container {
+    margin: 20px 0px
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: row;
+    }
+
+    header.navbar-container .logo img {
+        width: 75px;
+    }
+
+    header.navbar-container .nav-list  {
+        padding: 0px 0px;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0 1.5rem;
+        border-radius: 1000px;
+    }
+
+    article .content {
+        margin: 20px 10px;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+    }
+
+    .table-info {
+        width: 100%;
+        font-family: "Omori";
+        margin: auto;
+    }
+
+    .table-info .logo {
+        width: 40vw;
+    }
+
+    #home .content h1 { 
+        font-size: 3rem;
+    }
+    #home .content h2 { 
+        font-size: 1rem;
+        opacity: 50%
+    }
+    
+    #character .charbox {
+        margin: auto;
+        width: 25%;
+        flex: 0 0 30%
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #6C0FFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    header.navbar-container .logo img {
+        width: 125px;
+    }
+
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0 1.5rem;
+        border-radius: 1000px;
+    }
+
+    #information .container {
+        flex-flow: column-reverse nowrap;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-height: 768px) {
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0 1.5rem;
+        border-radius: 1000px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header.navbar-container .logo img {
+        width: 150px;
+    }
+
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 1.5rem;
+        border-radius: 1000px;
+    }
+    header.navbar-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header.navbar-container .logo img {
+        width: 100px;
+    }
+
+    header.navbar-container .nav-list li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0 1.5rem;
+        border-radius: 1000px;
+    }
+}
+
