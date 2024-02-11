@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 @font-face {
     font-family: "Omori";
-    src: url("assets/font/omori.ttf");
+    src: url("../font/omori.ttf");
 }
 
 @font-face {
     font-family: "Omori Creepy";
-    src: url("assets/font/omori_creepy.ttf");
+    src: url("../font/omori_creepy.ttf");
 }
 
 ::-webkit-scrollbar {
@@ -172,7 +172,7 @@ header.navbar-container .nav-list li a:hover {
     width:100%;
     height:100vh;
     position: fixed;
-    background: url("assets/img/bg_home.jpeg") no-repeat center;
+    background: url("../img/bg_home.jpeg") no-repeat center;
     background-attachment: scroll;
     background-position: center;
     background-size:cover;
