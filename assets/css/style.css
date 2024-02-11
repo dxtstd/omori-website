@@ -119,6 +119,7 @@ header {
 
 header.navbar-container {
     overflow: hidden;
+    user-select: none;
     background-color: rgba(0,0,0,0.5);
     padding: 10px 0px;
     margin: 0, 0;
@@ -195,6 +196,8 @@ header.navbar-container .nav-list li a:hover {
     font-family: "Omori";
     min-height: 500px;
     height: 100dvh;
+    overflow: auto;
+    user-select: none;
 }
 
 #home .bg-fade {
