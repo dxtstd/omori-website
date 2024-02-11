@@ -418,8 +418,7 @@ article .content .heading {
     #character .charbox {
         margin: auto;
         width: 25%;
-        flex: 0 0 30%
-    }
+        flex: 0 0 30%    }
 }
 
 footer {
