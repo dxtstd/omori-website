@@ -342,12 +342,14 @@ article .content .heading {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px 15px
+    gap: 10px 10px
 }
 
 #character .charbox {
+    margin: 15px auto;
     width: 50%;
-    flex: 1
+    flex: 1;
+    border: 1px solid #969595;
 }
 
 #character .charbox img {
@@ -419,7 +421,7 @@ article .content .heading {
     }
     
     #character .charbox {
-        margin: auto;
+        margin: 10px auto;
         width: 25%;
         flex: 0 0 30%    }
 }
