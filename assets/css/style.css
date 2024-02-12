@@ -374,10 +374,14 @@ article .content .heading {
 }
 
 #story .ending-box figure img {
+    overflow: auto;
     padding: 10px 10px;
     margin: auto;
-    width: 30dvw;
-    height: 300px;
+    width: 30vw;
+    height: 40ch;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     object-fit: cover;
     object-position: center;
 }
