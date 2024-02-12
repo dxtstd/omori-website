@@ -346,6 +346,7 @@ article .content .heading {
 
 #story .ending-box {
     padding: 30px 30px;
+    margin: 15px auto;
     flex: 1;
     width: 50%;
     border: 1px solid #969595
