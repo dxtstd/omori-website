@@ -271,7 +271,22 @@ article .content p {
 
 article .content .heading {
     font-family: "Omori";
+}
+
+article .content  h1  {
+    font-size: 3.5em;
+}
+
+article .content h2  {
+    font-size: 2.5em;
+}
+
+article .content h3  {
     font-size: 2em;
+}
+
+article .content h4 {
+    font-size: 1.5em;
 }
 
 
@@ -335,6 +350,14 @@ article .content .heading {
 
 #story .type-ending {
     margin: 0px 0px 50px 0px
+}
+
+#story .subsub-content {
+    margin: 0px 0px 25px 0px
+}
+
+#story .subsubsub-content {
+    margin: 0px 0px 25px 0px
 }
 
 #story .container-ending {
@@ -498,12 +521,21 @@ footer {
         flex-flow: column-reverse nowrap;
     }
 
-    
-
     #story .ending-box.flex-box {
         display: flex;
         flex-direction: column;
    }
+
+   #story .ending-box figure img {
+        overflow: auto;
+        padding: 10px 10px;
+        margin: auto;
+        width: 60vw;
+        height: 20ch;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-height: 768px) {
@@ -523,19 +555,6 @@ footer {
         width: 50%;
         border: 1px solid #969595
     }
-
-    #story .ending-box figure img {
-        overflow: auto;
-        padding: 10px 10px;
-        margin: auto;
-        width: 50vw;
-        height: 20ch;
-        margin: auto;
-        object-fit: cover;
-        object-position: center;
-    }
-    
-
 }
 
 @media screen and (max-width: 600px) {
