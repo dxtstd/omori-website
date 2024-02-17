@@ -519,6 +519,10 @@ footer .follow_us {
         width: 40vw;
     }
 
+    article .content {
+        font-size: 0.8em;
+    }
+
     #home .content h1 { 
         font-size: 3rem;
     }
@@ -538,6 +542,12 @@ footer .follow_us {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px 0px
+    }
+    
+    #story .ending-box figure img {
+        padding: 10px 10px;
+        width: 60vw;
+        height: 30vh;
     }
 }
 
@@ -568,13 +578,7 @@ footer .follow_us {
     #story .ending-box.flex-box {
         display: flex;
         flex-direction: column;
-   }
-
-   #story .ending-box figure img {
-        padding: 10px 10px;
-        width: 60vw;
-        height: 50vh;
-   }
+    }
 }
 
 @media screen and (max-width: 768px) and (min-height: 768px) {
@@ -618,17 +622,11 @@ footer .follow_us {
         flex-direction: column;
     }
 
-    article .content {
-        font-size: 0.8em;
-    }
-
     #story .ending-box figure img {
         padding: 10px 10px;
         width: 60vw;
         height: 30vh;
     }
-
-    
 }
 
 @media screen and (max-width: 400px) {
