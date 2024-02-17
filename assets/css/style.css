@@ -65,8 +65,9 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     box-sizing: content-box;
+    text-decoration: none;
 }
 
 .border-line {
@@ -182,13 +183,29 @@ header.navbar-container .nav-list li a:hover {
 
 .box {
     border-radius: 10px;
-    padding: 25px 25px;
+    padding: 30px 30px;
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .border {
     border: 2px solid black;
+}
+
+.sm {
+    margin: 10px 0px 0px 0px;
+}
+
+.sm a {
+    color: #fff;
+    font-size: 22px;
+    margin : 0 10px;
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+.sm a:hover {
+    transform: scale(1.5);
 }
 
 #home {
@@ -364,10 +381,11 @@ article .content h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px 15px
+    gap: 25px 25px
 }
 
 #story .ending-box {
+    transition: all 0.75s (0.175, 0.885, 0.32, 1.275);
     padding: 30px 30px;
     margin: 15px auto;
     flex: 1;
@@ -400,8 +418,8 @@ article .content h4 {
     overflow: auto;
     padding: 10px 10px;
     margin: auto;
-    width: 35vw;
-    height: 40ch;
+    width: 25rem;
+    height: 20rem;
     margin: auto;
     object-fit: cover;
     object-position: center;
@@ -411,7 +429,7 @@ article .content h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px 10px
+    gap: 25px 25px
 }
 
 #character .charbox {
@@ -499,11 +517,29 @@ footer {
     padding: 20px;
     color: white;
     background-color: #6C0FFF;
-    text-align: center;
-    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    box-shadow: inset 0px 20px 10px -10px #8a42ff;
 }
 
-@media screen and (max-width: 1000px) {
+footer .container {
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+footer .ico {
+    width: 150px;
+}
+
+footer .follow_us {
+    margin: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
     header.navbar-container .logo img {
         width: 125px;
     }
@@ -531,7 +567,7 @@ footer {
         padding: 10px 10px;
         margin: auto;
         width: 60vw;
-        height: 20ch;
+        height: 50vh;
         margin: auto;
         object-fit: cover;
         object-position: center;
@@ -571,6 +607,11 @@ footer {
         border-radius: 1000px;
     }
     header.navbar-container {
+        flex-direction: column;
+    }
+
+    footer .container {
+        justify-content: none;
         flex-direction: column;
     }
 }
