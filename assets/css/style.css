@@ -275,7 +275,7 @@ header.navbar-container .nav-list li a:hover {
 }
 
 article .content {
-    margin: 20px 20px;
+    margin: 20px 100px;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
 }
@@ -456,6 +456,32 @@ article .content h4 {
     margin: 20px 0px
 }
 
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #6C0FFF;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    box-shadow: inset 0px 20px 10px -10px #8a42ff;
+}
+
+footer .container {
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+footer .ico {
+    width: 150px;
+}
+
+footer .follow_us {
+    margin: 10px 10px 0px 0px;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     header.navbar-container {
         flex-direction: row;
@@ -483,12 +509,6 @@ article .content h4 {
         border-radius: 1000px;
     }
 
-    article .content {
-        margin: 20px 10px;
-        font-family: "Rubik", sans-serif;
-        font-size: 16px;
-    }
-
     .table-info {
         width: 100%;
         font-family: "Omori";
@@ -510,36 +530,24 @@ article .content h4 {
     #character .charbox {
         margin: 10px auto;
         width: 25%;
-        flex: 0 0 30%    }
-}
+        flex: 0 0 30%
+    }
 
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #6C0FFF;
-    font-family: "Rubik", sans-serif;
-    font-size: 16px;
-    box-shadow: inset 0px 20px 10px -10px #8a42ff;
-}
-
-footer .container {
-    margin: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px 0px;
-}
-
-footer .ico {
-    width: 150px;
-}
-
-footer .follow_us {
-    margin: 10px 10px 0px 0px;
-    text-align: center;
+    #character .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px 0px
+    }
 }
 
 @media screen and (max-width: 1100px) {
+    article .content {
+        margin: 20px 10px;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+    }
+
     header.navbar-container .logo img {
         width: 125px;
     }
@@ -563,15 +571,10 @@ footer .follow_us {
    }
 
    #story .ending-box figure img {
-        overflow: auto;
         padding: 10px 10px;
-        margin: auto;
         width: 60vw;
         height: 50vh;
-        margin: auto;
-        object-fit: cover;
-        object-position: center;
-    }
+   }
 }
 
 @media screen and (max-width: 768px) and (min-height: 768px) {
@@ -614,6 +617,18 @@ footer .follow_us {
         justify-content: none;
         flex-direction: column;
     }
+
+    article .content {
+        font-size: 0.8em;
+    }
+
+    #story .ending-box figure img {
+        padding: 10px 10px;
+        width: 60vw;
+        height: 30vh;
+    }
+
+    
 }
 
 @media screen and (max-width: 400px) {
