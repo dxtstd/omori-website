@@ -533,7 +533,6 @@ footer .follow_us {
     
     #character .charbox {
         margin: 10px auto;
-        width: 25%;
         flex: 0 0 30%
     }
 
@@ -637,10 +636,25 @@ footer .follow_us {
     header.navbar-container .nav-list li a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         font-weight: 500;
         padding: 0 1.5rem;
         border-radius: 1000px;
     }
-}
 
+    article .content {
+        font-size: 0.8em;
+    }
+
+    #character .charbox {
+        width: 40%;
+        flex: 0 0 25%
+    }
+
+    #character .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px 0px
+    }
+}
